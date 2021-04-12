@@ -25,7 +25,7 @@ node dev.js
 
 ## Data Table
 
-Tables: fooInt/fooBigInt
+Tables: FooInt/FooBigInt
 
 |id|score ↓|
 |-|-|
@@ -45,19 +45,25 @@ const args = {
 ## Expected
 
 ```
-Int:
+Int (score desc):
  [ { id: 2, score: 2 }, { id: 1, score: 1 } ]
 
-BigInt:
- [ { id: 2, score: 2 }, { id: 1, score: 1 } ]
+BigInt (score desc):
+ [ { id: 2n, score: 2 }, { id: 1n, score: 1 } ]
+
+BigInt (id desc):
+ [ { id: 2n, score: 2 }, { id: 1n, score: 1 } ]
 ```
 
 ## Actual
 
 ```
-Int:
+Int (score desc):
  [ { id: 2, score: 2 }, { id: 1, score: 1 } ]
 
-BigInt:
+BigInt (score desc):
  []
+
+BigInt (id desc):
+ [ { id: 2n, score: 2 }, { id: 1n, score: 1 } ]
 ```
