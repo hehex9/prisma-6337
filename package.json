@@ -1,0 +1,9 @@
+{
+  "name": "prisma-6337",
+  "private": true,
+  "version": "1.0.0",
+  "dependencies": {
+    "@prisma/client": "2.20.1",
+    "prisma": "2.20.1"
+  }
+}
